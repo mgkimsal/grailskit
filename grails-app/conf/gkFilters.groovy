@@ -21,11 +21,8 @@ class gkFilters {
 								}
 								return true
 							} else {
-								if(controllerName!='logout' && controllerName!=null)
-								{
-									session.user = Person.findById(u.id)
-									session.security = s
-								}
+								session.user = Person.findById(u.id)
+								session.security = s
 							}
 						}
 						afterView = {
