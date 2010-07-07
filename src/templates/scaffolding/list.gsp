@@ -38,7 +38,7 @@
                     <g:each in="\${${propertyName}List}" status="i" var="${propertyName}">
                         <tr class="\${(i % 2) == 0 ? 'odd' : 'even'}">
 													<td>
-														<g:link action="show" id="\${${propertyName}?.id}"view</g:link> |
+														<g:link action="show" id="\${${propertyName}?.id}">view</g:link> |
 														<g:link action="edit" id="\${${propertyName}?.id}">edit</g:link>> | 
 														<g:link action="del" id="\${${propertyName}?.id}" onclick="return confirm('Are you sure?');">del</g:link>
 													</td>
