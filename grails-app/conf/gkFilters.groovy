@@ -12,6 +12,7 @@ class gkFilters {
 							def u = s.getPrincipal()
 							if(!s?.isLoggedIn())
 							{
+							/*
 								session.user = null
 								session.security = null
 								if(controllerName!=null && controllerName!='logout' && controllerName!='register' && 
@@ -23,6 +24,7 @@ class gkFilters {
 							} else {
 								session.user = Person.findById(u.id)
 								session.security = s
+								*/
 							}
 						}
 						afterView = {
